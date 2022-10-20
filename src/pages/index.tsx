@@ -15,15 +15,15 @@ const Home: NextPage = () => {
           </Text>
         </section>
         <section className="w-[95%] flex flex-col gap-4">
-          <TextInput placeholder="Tu pagina" className="w-full" size="lg" />
-          <Button uppercase style={{ fontWeight: 300 }} size="md" className="w-full">Agregar pagina</Button>
+          <div className="flex items-center gap-2">
+            <Text size="lg" className="font-semibold">COFFREAK.com/</Text>
+            <TextInput placeholder="Tu pagina" className="w-full" size="lg" />
+          </div>
+          <Button uppercase style={{ fontWeight: 300 }} size="md" className="w-full">Crear pagina</Button>
         </section>
         <Image width={275} height={275} src="/icon.png" alt="LOGO" className="rounded-lg"/>
         <FAQ />
       </main>
-      <footer>
-        VOLVER A ARRIBA
-      </footer>
     </>
   );
 };
